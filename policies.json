@@ -1,0 +1,59 @@
+{
+  "policies": {
+    "Bookmarks": [
+      {
+        "Favicon": "https://wiidatabase.de/favicon.ico",
+        "Placement": "toolbar",
+        "Title": "WiiDatabase",
+        "URL": "https://wiidatabase.de/"
+      }
+    ],
+    "DisableFirefoxStudies": true,
+    "DisableSetDesktopBackground": true,
+    "DisableTelemetry": true,
+    "EnableTrackingProtection": {
+      "Value": true
+    },
+    "Extensions": {
+      "Install": [
+        "https://addons.mozilla.org/firefox/downloads/latest/ublock-origin/addon-607454-latest.xpi",
+        "https://addons.mozilla.org/firefox/downloads/latest/image-reverse-search/addon-751101-latest.xpi",
+        "https://addons.mozilla.org/firefox/downloads/latest/disable-page-visibility/addon-908368-latest.xpi",
+        "https://www.eff.org/files/https-everywhere-latest.xpi",
+        "https://addons.mozilla.org/firefox/downloads/latest/i-dont-care-about-cookies/addon-481438-latest.xpi"
+      ]
+    },
+    "Homepage": {
+      "Locked": true
+    },
+    "InstallAddonsPermission": {
+      "Allow": [
+        "https://github.com"
+      ],
+      "Default": true
+    },
+    "NoDefaultBookmarks": true,
+    "OverrideFirstRunPage": "",
+    "Permissions": {
+      "Notifications": {
+        "Allow": [
+          "https://web.skype.com",
+          "https://calendar.google.com",
+          "https://www.messenger.com",
+          "https://web.whatsapp.com",
+          "https://discordapp.com",
+          "https://steamcommunity.com",
+          "https://tweetdeck.twitter.com"
+        ],
+        "BlockNewRequests": true
+      }
+    },
+    "Proxy": {
+      "AutoLogin": true,
+      "Mode": "none",
+      "SOCKSVersion": 4,
+      "UseHTTPProxyForAllProtocols": true,
+      "UseProxyForDNS": false
+    }
+  }
+}

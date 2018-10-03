@@ -1,0 +1,6 @@
+/* Show favorites and collection buttons on AMO */
+@-moz-document domain(addons.mozilla.org) {
+    .addon-details .widgets {
+        display: initial !important; 
+    }
+}
