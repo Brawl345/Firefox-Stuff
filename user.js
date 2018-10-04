@@ -1,18 +1,67 @@
-// Enable Tracking Protection
-user_pref("privacy.trackingprotection.enabled", true);
-user_pref("services.sync.prefs.sync.privacy.trackingprotection.enabled", true);
+//////////////////////////////////////
+//      Firefox user.js by Brawl345
+/////////////////////////////////////
+// NOTE: All settings will be synced with Firefox Sync (services.sync.prefs.sync.*)
 
-// Enable new Content Blocking UI for Firefox 62+
-user_pref("browser.contentblocking.ui.enabled", true);
-user_pref("services.sync.prefs.sync.browser.contentblocking.ui.enabled", true);
+//////////////////////////////////////
+//      Cosmetic
+//////////////////////////////////////
 
-// Enable Fastblock for Content Blocker
-user_pref("browser.fastblock.enabled", true);
-user_pref("services.sync.prefs.sync.browser.fastblock.enabled", true);
+// Show Punycode for URLs
+user_pref("network.IDN_show_punycode", true);
+user_pref("services.sync.prefs.sync.network.IDN_show_punycode", true);
 
-// Block tracker cookies
-user_pref("network.cookie.cookieBehavior", 4);
-user_pref("services.sync.prefs.sync.network.cookie.cookieBehavior", true);
+// Compact style
+user_pref("browser.uidensity", 1);
+user_pref("services.sync.prefs.sync.browser.uidensity", true);
+
+// Disable "warranty void" message for about:config
+user_pref("general.warnOnAboutConfig", false);
+user_pref("services.sync.prefs.sync.general.warnOnAboutConfig", true);
+
+// Disable Add-Ons Discover Pane
+user_pref("extensions.getAddons.showPane", false);
+user_pref("services.sync.prefs.sync.extensions.getAddons.showPane", true);
+user_pref("extensions.webservice.discoverURL", "");
+user_pref("services.sync.prefs.sync.extensions.webservice.discoverURL", true);
+
+// Disable "OneOff" search icons
+user_pref("browser.urlbar.oneOffSearches", false);
+user_pref("services.sync.prefs.sync.browser.urlbar.oneOffSearches", true);
+
+// Disable Animations
+user_pref("toolkit.cosmeticAnimations.enabled", false);
+user_pref("services.sync.prefs.sync.toolkit.cosmeticAnimations.enabled", true);
+
+// Full Screen: Disable fadein/fadeout
+user_pref("full-screen-api.transition-duration.enter", "0 0");
+user_pref("services.sync.prefs.sync.full-screen-api.transition-duration.enter", true);
+user_pref("full-screen-api.transition-duration.leave", "0 0");
+user_pref("services.sync.prefs.sync.full-screen-api.transition-duration.leave", true);
+user_pref("full-screen-api.transition.timeout", 0);
+user_pref("services.sync.prefs.sync.full-screen-api.transition.timeout", true);
+
+// Full Screen: Disable warning
+user_pref("full-screen-api.warning.timeout", 0);
+user_pref("services.sync.prefs.sync.full-screen-api.warning.timeout", true);
+
+// Don't trim URLs
+user_pref("browser.urlbar.trimURLs", false);
+user_pref("services.sync.prefs.sync.browser.urlbar.trimURLs", true);
+
+//////////////////////////////////////
+//      Functionality
+//////////////////////////////////////
+
+// Change Startup homepage
+user_pref("browser.startup.homepage", "about:blank");
+user_pref("services.sync.prefs.sync.browser.startup.homepage", true);
+
+// Disable New Tab Page
+user_pref("browser.newtabpage.enabled", false);
+user_pref("services.sync.prefs.sync.browser.newtabpage.enabled", true);
+user_pref("browser.newtab.preload", false);
+user_pref("services.sync.prefs.sync.browser.newtab.preload", true);
 
 // Enable Add-Ons on Mozilla websites
 user_pref("privacy.resistFingerprinting.block_mozAddonManager", true);
@@ -26,27 +75,9 @@ user_pref("services.sync.prefs.sync.browser.download.manager.addToRecentDocs", t
 user_pref("browser.bookmarks.autoExportHTML", true);
 user_pref("services.sync.prefs.sync.browser.bookmarks.autoExportHTML", true);
 
-// Show Punycode for URLs
-user_pref("network.IDN_show_punycode", true);
-user_pref("services.sync.prefs.sync.network.IDN_show_punycode", true);
-
-// Compact style
-user_pref("browser.uidensity", 1);
-user_pref("services.sync.prefs.sync.browser.uidensity", true);
-
 // Open last tabs on startup
 user_preF("browser.startup.page", 3);
 user_pref("services.sync.prefs.sync.browser.startup.page", true);
-
-// Change Startup homepage
-user_pref("browser.startup.homepage", "about:blank");
-user_pref("services.sync.prefs.sync.browser.startup.homepage", true);
-
-// Disable New Tab Page
-user_pref("browser.newtabpage.enabled", false);
-user_pref("services.sync.prefs.sync.browser.newtabpage.enabled", true);
-user_pref("browser.newtab.preload", false);
-user_pref("services.sync.prefs.sync.browser.newtab.preload", true);
 
 // Enable middle-click scrolling (for Linux)
 user_pref("general.autoScroll", true);
@@ -63,6 +94,54 @@ user_pref("services.sync.prefs.sync.browser.urlbar.delay", true);
 // Disable Add-On signing requirement (Nightly and ESR only)
 user_pref("xpinstall.signatures.required", false);
 user_pref("services.sync.prefs.sync.xpinstall.signatures.required", true);
+
+// Disable virus scanning
+user_pref("browser.download.manager.scanWhenDone", false);
+user_pref("services.sync.prefs.sync.browser.download.manager.scanWhenDone", true);
+
+// Disable backspace for navigation
+user_pref("browser.backspace_action", 2);
+user_pref("services.sync.prefs.sync.browser.backspace_action", true);
+
+// Disable timeout for downloads
+user_pref("security.dialog_enable_delay", 0);
+user_pref("services.sync.prefs.sync.security.dialog_enable_delay", true);
+
+// Don't close window when closing last tab
+user_pref("browser.tabs.closeWindowWithLastTab", false);
+user_pref("services.sync.prefs.sync.browser.tabs.closeWindowWithLastTab", true);
+
+// Don't "eat space" next to word when selecting
+user_pref("layout.word_select.eat_space_to_next_word", false);
+user_pref("services.sync.prefs.sync.layout.word_select.eat_space_to_next_word", true);
+
+// Findbar Highlight Modal like Opera 12
+user_pref("findbar.modalHighlight", true);
+user_pref("services.sync.prefs.sync.findbar.modalHighlight", true);
+
+// Findbar Highlight all
+user_pref("findbar.highlightAll", true);
+user_pref("services.sync.prefs.sync.findbar.highlightAll", true);
+
+//////////////////////////////////////
+//      Privacy
+//////////////////////////////////////
+
+// Enable Tracking Protection
+user_pref("privacy.trackingprotection.enabled", true);
+user_pref("services.sync.prefs.sync.privacy.trackingprotection.enabled", true);
+
+// Enable new Content Blocking UI for Firefox 62+
+user_pref("browser.contentblocking.ui.enabled", true);
+user_pref("services.sync.prefs.sync.browser.contentblocking.ui.enabled", true);
+
+// Enable Fastblock for Content Blocker
+user_pref("browser.fastblock.enabled", true);
+user_pref("services.sync.prefs.sync.browser.fastblock.enabled", true);
+
+// Block tracker cookies
+user_pref("network.cookie.cookieBehavior", 4);
+user_pref("services.sync.prefs.sync.network.cookie.cookieBehavior", true);
 
 // Disable Heartbeat Feedback
 user_pref("app.normandy.enabled", false);
@@ -126,33 +205,17 @@ user_pref("services.sync.prefs.sync.browser.onboarding.tour.onboarding-tour-scre
 user_pref("browser.onboarding.tour.onboarding-tour-sync.completed", false);
 user_pref("services.sync.prefs.sync.browser.onboarding.tour.onboarding-tour-sync.completed", true);
 
-// Disable "warranty void" message for about:config
-user_pref("general.warnOnAboutConfig", false);
-user_pref("services.sync.prefs.sync.general.warnOnAboutConfig", true);
+// Send DNT header
+user_pref("privacy.donottrackheader.enabled", true);
+user_pref("services.sync.prefs.sync.privacy.donottrackheader.enabled", true);
 
-// Disable Add-Ons Discover Pane
-user_pref("extensions.webservice.discoverURL", "");
-user_pref("services.sync.prefs.sync.extensions.webservice.discoverURL", true);
-
-// Disable DNS over HTTPS
-user_pref("network.trr.mode", 0);
+// Disable DNS over HTTPS by choice
+user_pref("network.trr.mode", 5);
 user_pref("services.sync.prefs.sync.network.trr.mode", true);
 
 // Set DNS over HTTPS to Google
 //user_pref("network.trr.uri", "https://dns.google.com/experimental");
 //user_pref("services.sync.prefs.sync.network.trr.uri", true);
-
-// Disable virus scanning
-user_pref("browser.download.manager.scanWhenDone", false);
-user_pref("services.sync.prefs.sync.browser.download.manager.scanWhenDone", true);
-
-// Disable backspace for navigation
-user_pref("browser.backspace_action", 2);
-user_pref("services.sync.prefs.sync.browser.backspace_action", true);
-
-// Disable "OneOff" search icons
-user_pref("browser.urlbar.oneOffSearches", false);
-user_pref("services.sync.prefs.sync.browser.urlbar.oneOffSearches", true);
 
 // Disable Beacons
 user_pref("beacon.enabled", false);
@@ -161,43 +224,3 @@ user_pref("services.sync.prefs.sync.beacon.enabled", true);
 // Disable Battery API
 user_pref("dom.battery.enabled", false);
 user_pref("services.sync.prefs.sync.dom.battery.enabled", true);
-
-// Disable Animations
-user_pref("toolkit.cosmeticAnimations.enabled", false);
-user_pref("services.sync.prefs.sync.toolkit.cosmeticAnimations.enabled", true);
-
-// Disable timeout for downloads
-user_pref("security.dialog_enable_delay", 0);
-user_pref("services.sync.prefs.sync.security.dialog_enable_delay", true);
-
-// Full Screen: Disable fadein/fadeout
-user_pref("full-screen-api.transition-duration.enter", "0 0");
-user_pref("services.sync.prefs.sync.full-screen-api.transition-duration.enter", true);
-user_pref("full-screen-api.transition-duration.leave", "0 0");
-user_pref("services.sync.prefs.sync.full-screen-api.transition-duration.leave", true);
-user_pref("full-screen-api.transition.timeout", 0);
-user_pref("services.sync.prefs.sync.full-screen-api.transition.timeout", true);
-
-// Full Screen: Disable warning
-user_pref("full-screen-api.warning.timeout", 0);
-user_pref("services.sync.prefs.sync.full-screen-api.warning.timeout", true);
-
-// Don't close window when closing last tab
-user_pref("browser.tabs.closeWindowWithLastTab", false);
-user_pref("services.sync.prefs.sync.browser.tabs.closeWindowWithLastTab", true);
-
-// Don't "eat space" next to word when selecting
-user_pref("layout.word_select.eat_space_to_next_word", false);
-user_pref("services.sync.prefs.sync.layout.word_select.eat_space_to_next_word", true);
-
-// Don't trim URLs
-user_pref("browser.urlbar.trimURLs", false);
-user_pref("services.sync.prefs.sync.browser.urlbar.trimURLs", true);
-
-// Findbar Highlight Modal like Opera 12
-user_pref("findbar.modalHighlight", true);
-user_pref("services.sync.prefs.sync.findbar.modalHighlight", true);
-
-// Findbar Highlight all
-user_pref("findbar.highlightAll", true);
-user_pref("services.sync.prefs.sync.findbar.highlightAll", true);
