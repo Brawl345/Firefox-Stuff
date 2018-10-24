@@ -67,6 +67,10 @@ user_pref("services.sync.prefs.sync.browser.newtab.preload", true);
 user_pref("privacy.resistFingerprinting.block_mozAddonManager", true);
 user_pref("services.sync.prefs.sync.privacy.resistFingerprinting.block_mozAddonManager", true);
 
+// Allow JavaScript in URL bar
+user_pref("browser.urlbar.filter.javascript", false);
+user_pref("services.sync.prefs.sync.browser.urlbar.filter.javascript", true);
+
 // Don't add downloaded documents to "Recents"
 user_pref("browser.download.manager.addToRecentDocs", false);
 user_pref("services.sync.prefs.sync.browser.download.manager.addToRecentDocs", true);
