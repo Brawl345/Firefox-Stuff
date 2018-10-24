@@ -95,6 +95,10 @@ user_pref("services.sync.prefs.sync.browser.urlbar.delay", true);
 user_pref("xpinstall.signatures.required", false);
 user_pref("services.sync.prefs.sync.xpinstall.signatures.required", true);
 
+// Show System Add-Ons on about:debugging
+user_pref("devtools.aboutdebugging.showSystemAddons", true);
+user_pref("services.sync.prefs.sync.devtools.aboutdebugging.showSystemAddons", true);
+
 // Disable virus scanning
 user_pref("browser.download.manager.scanWhenDone", false);
 user_pref("services.sync.prefs.sync.browser.download.manager.scanWhenDone", true);
