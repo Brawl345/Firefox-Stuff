@@ -8,8 +8,17 @@
         "URL": "https://wiidatabase.de/"
       }
     ],
+    "Cookies": {
+      "AcceptThirdParty": "always",
+      "Default": true,
+      "ExpireAtSessionEnd": false,
+      "RejectTracker": true
+    },
+    "DNSOverHTTPS": {
+      "Enabled": false,
+      "ProviderURL": "https://dns.quad9.net/dns-query"
+    },
     "DisableFirefoxStudies": true,
-    "DisableSetDesktopBackground": true,
     "DisableTelemetry": true,
     "EnableTrackingProtection": {
       "Value": true
@@ -23,12 +32,10 @@
         "https://addons.mozilla.org/firefox/downloads/latest/i-dont-care-about-cookies/addon-481438-latest.xpi"
       ]
     },
-    "Homepage": {
-      "Locked": true
-    },
     "InstallAddonsPermission": {
       "Allow": [
-        "https://github.com"
+        "https://github.com",
+        "https://www.eff.org"
       ],
       "Default": true
     },
