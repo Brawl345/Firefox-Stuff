@@ -79,6 +79,10 @@ user_pref("services.sync.prefs.sync.browser.download.manager.addToRecentDocs", t
 user_pref("browser.bookmarks.autoExportHTML", true);
 user_pref("services.sync.prefs.sync.browser.bookmarks.autoExportHTML", true);
 
+// New autoplay permissions (Firefox 63+)
+user_pref("media.autoplay.enabled.user-gestures-needed", true);
+user_pref("services.sync.prefs.sync.media.autoplay.enabled.user-gestures-needed", true);
+
 // Open last tabs on startup
 user_preF("browser.startup.page", 3);
 user_pref("services.sync.prefs.sync.browser.startup.page", true);
