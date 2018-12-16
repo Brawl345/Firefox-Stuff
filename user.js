@@ -144,15 +144,15 @@ user_pref("privacy.trackingprotection.enabled", true);
 user_pref("services.sync.prefs.sync.privacy.trackingprotection.enabled", true);
 
 // Enable new Content Blocking UI for Firefox 62+
-user_pref("browser.contentblocking.ui.enabled", true);
-user_pref("services.sync.prefs.sync.browser.contentblocking.ui.enabled", true);
+//user_pref("browser.contentblocking.ui.enabled", true);
+//user_pref("services.sync.prefs.sync.browser.contentblocking.ui.enabled", true);
 
 // Enable Fastblock for Content Blocker
-user_pref("browser.fastblock.enabled", true);
+//user_pref("browser.fastblock.enabled", true);
 user_pref("services.sync.prefs.sync.browser.fastblock.enabled", true);
 
 // Block tracker cookies
-user_pref("network.cookie.cookieBehavior", 4);
+//user_pref("network.cookie.cookieBehavior", 4);
 user_pref("services.sync.prefs.sync.network.cookie.cookieBehavior", true);
 
 // Disable Heartbeat Feedback
