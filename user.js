@@ -127,8 +127,8 @@ user_pref("services.sync.prefs.sync.browser.tabs.closeWindowWithLastTab", true);
 user_pref("layout.word_select.eat_space_to_next_word", false);
 user_pref("services.sync.prefs.sync.layout.word_select.eat_space_to_next_word", true);
 
-// Findbar Highlight Modal like Opera 12
-user_pref("findbar.modalHighlight", true);
+// Findbar Highlight Modal like Opera 12 (buggy)
+//user_pref("findbar.modalHighlight", true);
 user_pref("services.sync.prefs.sync.findbar.modalHighlight", true);
 
 // Findbar Highlight all
@@ -140,7 +140,7 @@ user_pref("services.sync.prefs.sync.findbar.highlightAll", true);
 //////////////////////////////////////
 
 // Enable Tracking Protection
-user_pref("privacy.trackingprotection.enabled", true);
+//user_pref("privacy.trackingprotection.enabled", true);
 user_pref("services.sync.prefs.sync.privacy.trackingprotection.enabled", true);
 
 // Enable new Content Blocking UI for Firefox 62+

@@ -20,9 +20,6 @@
     },
     "DisableFirefoxStudies": true,
     "DisableTelemetry": true,
-    "EnableTrackingProtection": {
-      "Value": true
-    },
     "Extensions": {
       "Install": [
         "https://addons.mozilla.org/firefox/downloads/latest/ublock-origin/addon-607454-latest.xpi",
