@@ -135,6 +135,10 @@ user_pref("services.sync.prefs.sync.findbar.modalHighlight", true);
 user_pref("findbar.highlightAll", true);
 user_pref("services.sync.prefs.sync.findbar.highlightAll", true);
 
+// Allow add-ons in private browsing by default
+user_pref("extensions.allowPrivateBrowsingByDefault", true);
+user_pref("services.sync.prefs.sync.extensions.allowPrivateBrowsingByDefault", true);
+
 //////////////////////////////////////
 //      Privacy
 //////////////////////////////////////
