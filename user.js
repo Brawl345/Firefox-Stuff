@@ -53,6 +53,10 @@ user_pref("services.sync.prefs.sync.browser.urlbar.trimURLs", true);
 //      Functionality
 //////////////////////////////////////
 
+// Enable user.css (Firefox 68+)
+user_pref("toolkit.legacyUserProfileCustomizations.stylesheets", true);
+user_pref("services.sync.prefs.sync.toolkit.legacyUserProfileCustomizations.stylesheets", true);
+
 // Change Startup homepage
 user_pref("browser.startup.homepage", "about:blank");
 user_pref("services.sync.prefs.sync.browser.startup.homepage", true);
