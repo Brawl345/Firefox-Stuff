@@ -8,6 +8,9 @@
         "URL": "https://wiidatabase.de/"
       }
     ],
+    "Certificates": {
+      "ImportEnterpriseRoots": true
+    },
     "Cookies": {
       "AcceptThirdParty": "always",
       "Default": true,
@@ -15,8 +18,8 @@
       "RejectTracker": true
     },
     "DNSOverHTTPS": {
-      "Enabled": false,
-      "ProviderURL": "https://dns.quad9.net/dns-query"
+      "Enabled": true,
+      "ProviderURL": "https://9.9.9.9/dns-query"
     },
     "DisableFirefoxStudies": true,
     "DisableTelemetry": true,
@@ -26,16 +29,19 @@
         "https://addons.mozilla.org/firefox/downloads/latest/image-reverse-search/addon-751101-latest.xpi",
         "https://addons.mozilla.org/firefox/downloads/latest/disable-page-visibility/addon-908368-latest.xpi",
         "https://www.eff.org/files/https-everywhere-latest.xpi",
-        "https://addons.mozilla.org/firefox/downloads/latest/i-dont-care-about-cookies/addon-481438-latest.xpi"
+        "https://addons.mozilla.org/firefox/downloads/latest/i-dont-care-about-cookies/addon-481438-latest.xpi",
+        "https://addons.mozilla.org/firefox/downloads/latest/amazon-tag-remover/addon-1684965-latest.xpi",
+        "https://addons.mozilla.org/firefox/downloads/latest/disable-ctrl-q-and-cmd-q/addon-559174.xpi"
       ]
     },
     "InstallAddonsPermission": {
       "Allow": [
-        "https://github.com",
-        "https://www.eff.org"
+        "https://github.com/",
+        "https://www.eff.org/"
       ],
       "Default": true
     },
+    "NetworkPrediction": true,
     "NoDefaultBookmarks": true,
     "OverrideFirstRunPage": "",
     "Permissions": {
@@ -58,6 +64,10 @@
       "SOCKSVersion": 4,
       "UseHTTPProxyForAllProtocols": true,
       "UseProxyForDNS": false
+    },
+    "SupportMenu": {
+      "Title": "Policy von @Brawl345",
+      "URL": "https://github.com/Brawl345/Firefox-Stuff"
     }
   }
 }
