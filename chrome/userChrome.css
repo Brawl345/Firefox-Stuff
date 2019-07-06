@@ -30,6 +30,6 @@ notification[value="plugin-hidden"].pluginVulnerable {
 #nav-bar-overflow-button { transform: rotate(90deg) !important; }
 
 /* Hide Giant Thumbnail and Favicon */
-#editBookmarkPanelImage, #editBookmarkPanelFaviconContainer, *|div#editBookmarkPanelFaviconContainer {
+*|div#editBookmarkPanelInfoArea {
   display: none !important;
 }
