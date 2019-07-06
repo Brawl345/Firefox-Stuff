@@ -74,8 +74,8 @@ user_pref("browser.newtab.preload", false);
 user_pref("services.sync.prefs.sync.browser.newtab.preload", true);
 
 // Enable Add-Ons on Mozilla websites
-user_pref("privacy.resistFingerprinting.block_mozAddonManager", true);
-user_pref("services.sync.prefs.sync.privacy.resistFingerprinting.block_mozAddonManager", true);
+user_pref("extensions.webextensions.restrictedDomains", "");
+user_pref("services.sync.prefs.sync.extensions.webextensions.restrictedDomains", true);
 
 // Allow JavaScript in URL bar
 user_pref("browser.urlbar.filter.javascript", false);
