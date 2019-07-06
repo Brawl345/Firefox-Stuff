@@ -235,13 +235,15 @@ user_pref("services.sync.prefs.sync.browser.onboarding.tour.onboarding-tour-sync
 user_pref("privacy.donottrackheader.enabled", true);
 user_pref("services.sync.prefs.sync.privacy.donottrackheader.enabled", true);
 
-// Disable DNS over HTTPS by choice
-user_pref("network.trr.mode", 5);
+// DNS over HTTPS with Quad9 (3 = only use DNS over HTTPS)
+user_pref("network.trr.mode", 3);
 user_pref("services.sync.prefs.sync.network.trr.mode", true);
+user_pref("network.trr.uri", "https://9.9.9.9/dns-query");
+user_pref("services.sync.prefs.sync.network.trr.uri", true);
 
-// Set DNS over HTTPS to Google
-//user_pref("network.trr.uri", "https://dns.google.com/experimental");
-//user_pref("services.sync.prefs.sync.network.trr.uri", true);
+// Set ESNI for DNSoHTTPS
+user_pref("network.security.esni.enabled", true);
+user_pref("services.sync.prefs.sync.network.security.esni.enabled", true);
 
 // Disable Beacons
 user_pref("beacon.enabled", false);
