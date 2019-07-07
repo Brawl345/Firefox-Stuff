@@ -235,8 +235,8 @@ user_pref("services.sync.prefs.sync.browser.onboarding.tour.onboarding-tour-sync
 user_pref("privacy.donottrackheader.enabled", true);
 user_pref("services.sync.prefs.sync.privacy.donottrackheader.enabled", true);
 
-// DNS over HTTPS with Quad9 (3 = only use DNS over HTTPS)
-user_pref("network.trr.mode", 3);
+// DNS over HTTPS with Quad9 (2 = also use system DNS, 3 = only use DNS over HTTPS)
+user_pref("network.trr.mode", 2);
 user_pref("services.sync.prefs.sync.network.trr.mode", true);
 user_pref("network.trr.uri", "https://9.9.9.9/dns-query");
 user_pref("services.sync.prefs.sync.network.trr.uri", true);
