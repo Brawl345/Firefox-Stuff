@@ -149,6 +149,9 @@ user_pref("services.sync.prefs.sync.findbar.highlightAll", true);
 user_pref("extensions.allowPrivateBrowsingByDefault", true);
 user_pref("services.sync.prefs.sync.extensions.allowPrivateBrowsingByDefault", true);
 
+// Sync settings that are NOT on the target device (Firefox 68+)
+user_pref("services.sync.prefs.dangerously_allow_arbitrary", true);
+
 //////////////////////////////////////
 //      Privacy
 //////////////////////////////////////
