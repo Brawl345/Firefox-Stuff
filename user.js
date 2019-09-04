@@ -19,13 +19,9 @@ user_pref("services.sync.prefs.sync.browser.uidensity", true);
 user_pref("general.warnOnAboutConfig", false);
 user_pref("services.sync.prefs.sync.general.warnOnAboutConfig", true);
 
-// Revert to old about:addons design
-user_pref("extensions.htmlaboutaddons.enabled", false);
-user_pref("services.sync.prefs.sync.extensions.htmlaboutaddons.enabled", true);
-
 // Disable Add-Ons Discover Pane
-user_pref("extensions.getAddons.showPane", false);
-user_pref("services.sync.prefs.sync.extensions.getAddons.showPane", true);
+user_pref("extensions.htmlaboutaddons.discover.enabled", false);
+user_pref("services.sync.prefs.sync.extensions.htmlaboutaddons.discover.enabled", true);
 user_pref("extensions.webservice.discoverURL", "");
 user_pref("services.sync.prefs.sync.extensions.webservice.discoverURL", true);
 user_pref("extensions.htmlaboutaddons.recommendations.enabled", false);
