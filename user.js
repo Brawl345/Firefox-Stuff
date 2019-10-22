@@ -16,8 +16,10 @@ user_pref("browser.uidensity", 1);
 user_pref("services.sync.prefs.sync.browser.uidensity", true);
 
 // Disable "warranty void" message for about:config
-user_pref("general.warnOnAboutConfig", false);
+user_pref("general.warnOnAboutConfig", false); // DEPR in 71
 user_pref("services.sync.prefs.sync.general.warnOnAboutConfig", true);
+user_pref("browser.aboutConfig.showWarning", false);
+user_pref("services.sync.prefs.sync.browser.aboutConfig.showWarning", true);
 
 // Disable Add-Ons Discover Pane
 user_pref("extensions.htmlaboutaddons.discover.enabled", false);
@@ -173,6 +175,8 @@ user_pref("app.normandy.enabled", false);
 user_pref("services.sync.prefs.sync.app.normandy.enabled", true);
 user_pref("app.normandy.api_url", "");
 user_pref("services.sync.prefs.sync.app.normandy.api_url", true);
+user_pref("app.normandy.user_id", "");
+user_pref("services.sync.prefs.sync.app.normandy.user_id", true);
 user_pref("app.shield.optoutstudies.enabled", false);
 user_pref("services.sync.prefs.sync.app.shield.optoutstudies.enabled", true);
 user_pref("shield.savant.enabled", false);
