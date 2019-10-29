@@ -1,39 +1,5 @@
 {
   "policies": {
-    "Bookmarks": [
-      {
-        "Favicon": "https://wiidatabase.de/favicon.ico",
-        "Placement": "toolbar",
-        "Title": "WiiDatabase",
-        "URL": "https://wiidatabase.de/"
-      }
-    ],
-    "Certificates": {
-      "ImportEnterpriseRoots": true
-    },
-    "Cookies": {
-      "AcceptThirdParty": "always",
-      "Default": true,
-      "ExpireAtSessionEnd": false,
-      "RejectTracker": true
-    },
-    "DNSOverHTTPS": {
-      "Enabled": true,
-      "ProviderURL": "https://9.9.9.9/dns-query"
-    },
-    "DisableFirefoxStudies": true,
-    "DisableTelemetry": true,
-    "Extensions": {
-      "Install": [
-        "https://addons.mozilla.org/firefox/downloads/latest/ublock-origin/addon-607454-latest.xpi",
-        "https://addons.mozilla.org/firefox/downloads/latest/image-reverse-search/addon-751101-latest.xpi",
-        "https://addons.mozilla.org/firefox/downloads/latest/disable-page-visibility/addon-908368-latest.xpi",
-        "https://www.eff.org/files/https-everywhere-latest.xpi",
-        "https://addons.mozilla.org/firefox/downloads/latest/i-dont-care-about-cookies/addon-481438-latest.xpi",
-        "https://addons.mozilla.org/firefox/downloads/latest/amazon-tag-remover/addon-1684965-latest.xpi",
-        "https://addons.mozilla.org/firefox/downloads/latest/disable-ctrl-q-and-cmd-q/addon-559174.xpi"
-      ]
-    },
     "InstallAddonsPermission": {
       "Allow": [
         "https://github.com/",
@@ -53,20 +19,15 @@
           "https://web.whatsapp.com",
           "https://discordapp.com",
           "https://steamcommunity.com",
-          "https://tweetdeck.twitter.com"
+          "https://tweetdeck.twitter.com",
+          "https://www.neogaf.com",
+          "https://my.jdownloader.org"
         ],
         "BlockNewRequests": true
       }
     },
-    "Proxy": {
-      "AutoLogin": true,
-      "Mode": "none",
-      "SOCKSVersion": 4,
-      "UseHTTPProxyForAllProtocols": true,
-      "UseProxyForDNS": false
-    },
     "SupportMenu": {
-      "Title": "Policy von @Brawl345",
+      "Title": "Firefox-Konfiguration von Brawl345",
       "URL": "https://github.com/Brawl345/Firefox-Stuff"
     }
   }

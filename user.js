@@ -34,7 +34,7 @@ user_pref("browser.urlbar.oneOffSearches", false);
 user_pref("services.sync.prefs.sync.browser.urlbar.oneOffSearches", true);
 
 // Disable Animations
-user_pref("toolkit.cosmeticAnimations.enabled", false);
+//user_pref("toolkit.cosmeticAnimations.enabled", false);
 user_pref("services.sync.prefs.sync.toolkit.cosmeticAnimations.enabled", true);
 
 // Full Screen: Disable fadein/fadeout
@@ -64,6 +64,10 @@ user_pref("services.sync.prefs.sync.toolkit.legacyUserProfileCustomizations.styl
 // Change Startup homepage
 user_pref("browser.startup.homepage", "about:blank");
 user_pref("services.sync.prefs.sync.browser.startup.homepage", true);
+
+// Enable automatic root certificate importing
+user_pref("security.certerrors.mitm.auto_enable_enterprise_roots", true);
+user_pref("services.sync.prefs.sync.security.certerrors.mitm.auto_enable_enterprise_roots", true);
 
 // Disable New Tab Page
 user_pref("browser.newtabpage.enabled", false);
@@ -157,14 +161,6 @@ user_pref("services.sync.prefs.dangerously_allow_arbitrary", true);
 // Enable Tracking Protection
 //user_pref("privacy.trackingprotection.enabled", true);
 user_pref("services.sync.prefs.sync.privacy.trackingprotection.enabled", true);
-
-// Enable new Content Blocking UI for Firefox 62+
-//user_pref("browser.contentblocking.ui.enabled", true);
-//user_pref("services.sync.prefs.sync.browser.contentblocking.ui.enabled", true);
-
-// Enable Fastblock for Content Blocker
-//user_pref("browser.fastblock.enabled", true);
-user_pref("services.sync.prefs.sync.browser.fastblock.enabled", true);
 
 // Block tracker cookies
 //user_pref("network.cookie.cookieBehavior", 4);
