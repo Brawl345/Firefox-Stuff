@@ -29,6 +29,10 @@ user_pref("services.sync.prefs.sync.extensions.webservice.discoverURL", true);
 user_pref("extensions.htmlaboutaddons.recommendations.enabled", false);
 user_pref("services.sync.prefs.sync.extensions.htmlaboutaddons.recommendations.enabled", true);
 
+// Disable Add-On recommendations on about:addons
+user_pref("browser.discovery.enabled", false);
+user_pref("services.sync.prefs.sync.browser.discovery.enabled", true);
+
 // Disable "OneOff" search icons
 user_pref("browser.urlbar.oneOffSearches", false);
 user_pref("services.sync.prefs.sync.browser.urlbar.oneOffSearches", true);
@@ -151,12 +155,20 @@ user_pref("services.sync.prefs.sync.findbar.highlightAll", true);
 user_pref("extensions.allowPrivateBrowsingByDefault", true);
 user_pref("services.sync.prefs.sync.extensions.allowPrivateBrowsingByDefault", true);
 
+// Disable "middle mouse paste" on Linux
+user_pref("middlemouse.paste", false); 
+user_pref("services.sync.prefs.sync.middlemouse.paste", true);
+
 // Sync settings that are NOT on the target device (Firefox 68+)
 user_pref("services.sync.prefs.dangerously_allow_arbitrary", true);
 
 //////////////////////////////////////
 //      Privacy
 //////////////////////////////////////
+
+// Sanitize extension blocklist URL
+user_pref("extensions.blocklist.url", "https://blocklists.settings.services.mozilla.com/v1/blocklist/3/%APP_ID%/%APP_VERSION%/");
+user_pref("services.sync.prefs.sync.extensions.blocklist.url", true);
 
 // Enable Tracking Protection
 //user_pref("privacy.trackingprotection.enabled", true);
@@ -165,6 +177,42 @@ user_pref("services.sync.prefs.sync.privacy.trackingprotection.enabled", true);
 // Block tracker cookies
 //user_pref("network.cookie.cookieBehavior", 4);
 user_pref("services.sync.prefs.sync.network.cookie.cookieBehavior", true);
+
+// Disable Telemetry
+user_pref("toolkit.telemetry.enabled", false);
+user_pref("services.sync.prefs.sync.toolkit.telemetry.enabled", true);
+user_pref("toolkit.telemetry.server", "data:,");
+user_pref("services.sync.prefs.sync.toolkit.telemetry.server", true);
+user_pref("toolkit.telemetry.archive.enabled", false);
+user_pref("services.sync.prefs.sync.toolkit.telemetry.archive.enabled", true);
+user_pref("toolkit.telemetry.newProfilePing.enabled", false);
+user_pref("services.sync.prefs.sync.toolkit.telemetry.newProfilePing.enabled", true);
+user_pref("toolkit.telemetry.shutdownPingSender.enabled", false);
+user_pref("services.sync.prefs.sync.toolkit.telemetry.shutdownPingSender.enabled", true);
+user_pref("toolkit.telemetry.updatePing.enabled", false);
+user_pref("services.sync.prefs.sync.toolkit.telemetry.updatePing.enabled", true);
+user_pref("toolkit.telemetry.bhrPing.enabled", false);
+user_pref("services.sync.prefs.sync.toolkit.telemetry.bhrPing.enabled", true);
+user_pref("toolkit.telemetry.firstShutdownPing.enabled", false);
+user_pref("services.sync.prefs.sync.toolkit.telemetry.firstShutdownPing.enabled", true);
+user_pref("toolkit.telemetry.hybridContent.enabled", false);
+user_pref("services.sync.prefs.sync.toolkit.telemetry.hybridContent.enabled", true);
+user_pref("toolkit.telemetry.coverage.opt-out", true);
+user_pref("services.sync.prefs.sync.toolkit.telemetry.coverage.opt-out", true);
+user_pref("toolkit.coverage.opt-out", true);
+user_pref("services.sync.prefs.sync.toolkit.coverage.opt-out", true);
+user_pref("toolkit.coverage.endpoint.base", "");
+user_pref("services.sync.prefs.sync.toolkit.coverage.endpoint.base", true);
+user_pref("browser.ping-centre.telemetry", false);
+user_pref("services.sync.prefs.sync.browser.ping-centre.telemetry", true);
+
+// Disable Health Report
+user_pref("datareporting.healthreport.uploadEnabled", false);
+user_pref("services.sync.prefs.sync.datareporting.healthreport.uploadEnabled", true);
+
+// Disable Data Reporting
+user_pref("datareporting.policy.dataSubmissionEnabled", false);
+user_pref("services.sync.prefs.sync.datareporting.policy.dataSubmissionEnabled", true);
 
 // Disable Heartbeat Feedback
 user_pref("app.normandy.enabled", false);
@@ -178,6 +226,10 @@ user_pref("services.sync.prefs.sync.app.shield.optoutstudies.enabled", true);
 user_pref("shield.savant.enabled", false);
 user_pref("services.sync.prefs.sync.shield.savant.enabled", true);
 
+// Disable Flash crash reports
+user_pref("dom.ipc.plugins.flash.subprocess.crashreporter.enabled", false);
+user_pref("services.sync.prefs.sync.dom.ipc.plugins.flash.subprocess.crashreporter.enabled", true);
+
 // Disable Shield Studies
 user_pref("network.allow-experiments", false);
 user_pref("services.sync.prefs.sync.network.allow-experiments", true);
@@ -189,6 +241,32 @@ user_pref("experiments.supported", false);
 user_pref("services.sync.prefs.sync.experiments.supported", true);
 user_pref("experiments.activeExperiment", false);
 user_pref("services.sync.prefs.sync.experiments.activeExperiment", true);
+
+// Disable Activity Stream
+user_pref("browser.library.activity-stream.enabled", false);
+user_pref("services.sync.prefs.sync.browser.library.activity-stream.enabled", true);
+user_pref("browser.newtabpage.activity-stream.feeds.telemetry", false);
+user_pref("services.sync.prefs.sync.browser.newtabpage.activity-stream.feeds.telemetry", true);
+user_pref("browser.newtabpage.activity-stream.telemetry", false);
+user_pref("services.sync.prefs.sync.browser.newtabpage.activity-stream.telemetry", true);
+user_pref("browser.newtabpage.activity-stream.telemetry.ping.endpoint", "");
+user_pref("services.sync.prefs.sync.browser.newtabpage.activity-stream.telemetry.ping.endpoint", true);
+user_pref("browser.newtabpage.activity-stream.feeds.snippets", false);
+user_pref("services.sync.prefs.sync.browser.newtabpage.activity-stream.feeds.snippets", true);
+user_pref("browser.newtabpage.activity-stream.asrouter.providers.snippets", "");
+user_pref("services.sync.prefs.sync.browser.newtabpage.activity-stream.asrouter.providers.snippets", true);
+user_pref("browser.newtabpage.activity-stream.feeds.section.topstories", false);
+user_pref("services.sync.prefs.sync.browser.newtabpage.activity-stream.feeds.section.topstories", true);
+user_pref("browser.newtabpage.activity-stream.section.highlights.includePocket", false);
+user_pref("services.sync.prefs.sync.browser.newtabpage.activity-stream.section.highlights.includePocket", true);
+user_pref("browser.newtabpage.activity-stream.showSponsored", false);
+user_pref("services.sync.prefs.sync.browser.newtabpage.activity-stream.showSponsored", true);
+user_pref("browser.newtabpage.activity-stream.feeds.discoverystreamfeed", false);
+user_pref("services.sync.prefs.sync.browser.newtabpage.activity-stream.feeds.discoverystreamfeed", true);
+
+// Disable Page Thumbnails
+user_pref("browser.pagethumbnails.capturing_disabled", true);
+user_pref("services.sync.prefs.sync.browser.pagethumbnails.capturing_disabled", true);
 
 // Disable URL Fixup (adding ".com")
 user_pref("browser.fixup.alternate.enabled", false);
