@@ -170,6 +170,9 @@ user_pref("services.sync.prefs.dangerously_allow_arbitrary", true);
 user_pref("extensions.blocklist.url", "https://blocklists.settings.services.mozilla.com/v1/blocklist/3/%APP_ID%/%APP_VERSION%/");
 user_pref("services.sync.prefs.sync.extensions.blocklist.url", true);
 
+// Sync "disable extension blocking" preference
+user_pref("services.sync.prefs.sync.extensions.blocklist.enabled", true);
+
 // Enable Tracking Protection
 //user_pref("privacy.trackingprotection.enabled", true);
 user_pref("services.sync.prefs.sync.privacy.trackingprotection.enabled", true);
@@ -179,6 +182,8 @@ user_pref("services.sync.prefs.sync.privacy.trackingprotection.enabled", true);
 user_pref("services.sync.prefs.sync.network.cookie.cookieBehavior", true);
 
 // Disable Telemetry
+user_pref("toolkit.telemetry.unified", false);
+user_pref("services.sync.prefs.sync.toolkit.telemetry.unified", true);
 user_pref("toolkit.telemetry.enabled", false);
 user_pref("services.sync.prefs.sync.toolkit.telemetry.enabled", true);
 user_pref("toolkit.telemetry.server", "data:,");
