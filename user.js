@@ -57,6 +57,10 @@ user_pref("services.sync.prefs.sync.full-screen-api.warning.timeout", true);
 user_pref("browser.urlbar.trimURLs", false);
 user_pref("services.sync.prefs.sync.browser.urlbar.trimURLs", true);
 
+// Green padlock again for HTTPS
+user_pref("security.secure_connection_icon_color_gray", false);
+user_pref("services.sync.prefs.sync.security.secure_connection_icon_color_gray", true);
+
 //////////////////////////////////////
 //      Functionality
 //////////////////////////////////////
