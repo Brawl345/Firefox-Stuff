@@ -182,11 +182,6 @@ user_pref("services.sync.prefs.sync.image.decode-immediately.enabled", true);
 user_pref("image.mem.decode_bytes_at_a_time", 49152);
 user_pref("services.sync.prefs.sync.image.mem.decode_bytes_at_a_time", true);
 
-
-// Disable page preview while dragging a tab
-user_pref("nglayout.enable_drag_images", false);
-user_pref("services.sync.prefs.sync.nglayout.enable_drag_images", true);
-
 // Tabs min width
 user_pref("browser.tabs.tabMinWidth", 120);
 user_pref("services.sync.prefs.sync.browser.tabs.tabMinWidth", true);
