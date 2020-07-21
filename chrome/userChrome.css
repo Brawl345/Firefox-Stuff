@@ -1,4 +1,4 @@
-@namespace "http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul";
+@import url("megabar-tweaks.css") screen;
 
 /* Customize timeout of notifications 
    https://redd.it/42zgqi */
@@ -11,14 +11,6 @@
 /* Hide urlbar history dropmarker */
 .urlbar-history-dropmarker {
     display: none !important;
-}
-
-/* Hide plugin bar */
-notification[value="plugin-hidden"] {
-  display: none !important;
-}
-notification[value="plugin-hidden"].pluginVulnerable {
-  display: inherit !important;
 }
 
 /* Show close button on every tab */

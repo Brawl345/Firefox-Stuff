@@ -22,8 +22,7 @@
           "https://tweetdeck.twitter.com",
           "https://www.neogaf.com",
           "https://my.jdownloader.org"
-        ],
-        "BlockNewRequests": true
+        ]
       }
     },
     "SupportMenu": {

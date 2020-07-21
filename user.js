@@ -33,14 +33,6 @@ user_pref("services.sync.prefs.sync.extensions.htmlaboutaddons.recommendations.e
 user_pref("browser.discovery.enabled", false);
 user_pref("services.sync.prefs.sync.browser.discovery.enabled", true);
 
-// Disable "OneOff" search icons
-user_pref("browser.urlbar.oneOffSearches", false);
-user_pref("services.sync.prefs.sync.browser.urlbar.oneOffSearches", true);
-
-// Disable Animations
-//user_pref("toolkit.cosmeticAnimations.enabled", false);
-user_pref("services.sync.prefs.sync.toolkit.cosmeticAnimations.enabled", true);
-
 // Full Screen: Disable fadein/fadeout
 user_pref("full-screen-api.transition-duration.enter", "0 0");
 user_pref("services.sync.prefs.sync.full-screen-api.transition-duration.enter", true);
@@ -165,6 +157,39 @@ user_pref("services.sync.prefs.sync.middlemouse.paste", true);
 
 // Sync settings that are NOT on the target device (Firefox 68+)
 user_pref("services.sync.prefs.dangerously_allow_arbitrary", true);
+
+// Various network-related preferences
+user_pref("network.http.max-persistent-connections-per-server", 10);
+user_pref("services.sync.prefs.sync.network.http.max-persistent-connections-per-server", true);
+user_pref("network.http.max-connections", 1500);
+user_pref("services.sync.prefs.sync.network.http.max-connections", true);
+user_pref("content.notify.interval", 500000);
+user_pref("services.sync.prefs.sync.content.notify.interval", true);
+user_pref("content.notify.ontimer", true);
+user_pref("services.sync.prefs.sync.content.notify.ontimer", true);
+user_pref("content.switch.threshold", 250000);
+user_pref("services.sync.prefs.sync.content.switch.threshold", true);
+user_pref("content.interrupt.parsing", true);
+user_pref("services.sync.prefs.sync.content.interrupt.parsing", true);
+user_pref("gfx.downloadable_fonts.fallback_delay", 0);
+user_pref("services.sync.prefs.sync.gfx.downloadable_fonts.fallback_delay", true);
+user_pref("gfx.downloadable_fonts.fallback_delay_short", 0);
+user_pref("services.sync.prefs.sync.gfx.downloadable_fonts.fallback_delay_short", true);
+user_pref("gfx.font_loader.delay", 0);
+user_pref("services.sync.prefs.sync.gfx.font_loader.delay", true);
+user_pref("image.decode-immediately.enabled", true);
+user_pref("services.sync.prefs.sync.image.decode-immediately.enabled", true);
+user_pref("image.mem.decode_bytes_at_a_time", 49152);
+user_pref("services.sync.prefs.sync.image.mem.decode_bytes_at_a_time", true);
+
+
+// Disable page preview while dragging a tab
+user_pref("nglayout.enable_drag_images", false);
+user_pref("services.sync.prefs.sync.nglayout.enable_drag_images", true);
+
+// Tabs min width
+user_pref("browser.tabs.tabMinWidth", 120);
+user_pref("services.sync.prefs.sync.browser.tabs.tabMinWidth", true);
 
 //////////////////////////////////////
 //      Privacy
