@@ -334,6 +334,8 @@ user_pref("browser.newtabpage.activity-stream.telemetry.structuredIngestion.endp
 user_pref("services.sync.prefs.sync.browser.newtabpage.activity-stream.telemetry.structuredIngestion.endpoint", true);
 user_pref("browser.newtabpage.activity-stream.telemetry.ut.events", false);
 user_pref("services.sync.prefs.sync.browser.newtabpage.activity-stream.telemetry.ut.events", true);
+user_pref("browser.newtabpage.activity-stream.showSponsoredTopSites", false);
+user_pref("services.sync.prefs.sync.browser.newtabpage.activity-stream.showSponsoredTopSites", true);
 
 // Disable Page Thumbnails
 user_pref("browser.pagethumbnails.capturing_disabled", true);
