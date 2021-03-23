@@ -67,6 +67,7 @@ user_pref("browser.download.manager.addToRecentDocs", false); // Downloaded docu
 user_pref("browser.download.manager.scanWhenDone", false); // Virus-scan after downloads
 user_pref("browser.fixup.alternate.enabled", false); // URL fixup
 user_pref("browser.newtabpage.activity-stream.feeds.asrouterfeed", false); // Feature recommendations
+user_pref("browser.quitShortcut.disabled", true); // Disable CTRL-Q
 user_pref("browser.safebrowsing.blockedURIs.enabled", false); // Safe browsing
 user_pref("browser.safebrowsing.downloads.enabled", false); // Safe browsing
 user_pref("browser.safebrowsing.downloads.remote.enabled", false); // Safe browsing
