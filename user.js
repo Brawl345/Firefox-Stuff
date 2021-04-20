@@ -133,4 +133,5 @@ user_pref("security.insecure_connection_text.enabled", true); // Insecure connec
 user_pref("security.insecure_connection_text.pbmode.enabled", true); // Insecure connection text in Private Browsing
 user_pref("security.secure_connection_icon_color_gray", false); // HTTPS padlock icon color
 user_pref("toolkit.legacyUserProfileCustomizations.stylesheets", true); // Enable userChrome.css
-
+user_pref("pdfjs.enableScripting", false); // JavaScript in PDFs
+user_pref("browser.menu.showViewImageInfo", true); // Show "view image info" in context menu again
