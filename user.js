@@ -113,6 +113,7 @@ user_pref("security.insecure_field_warning.contextual.enabled", false); // "Inse
 user_pref("ui.use_standins_for_native_colors", true); // Disable reading color scheme
 user_pref("xpinstall.signatures.required", false); // Add-on signing, Nightly and ESR only
 user_pref("webgl.enable-debug-renderer-info", false); // WebGL debugging info (used for fingerprinting)
+user_pref("browser.messaging-system.whatsNewPanel.enabled", false); // What's new button
 
 /* Features */
 user_pref("browser.bookmarks.autoExportHTML", true); // Auto export bookmarks on shutdown
