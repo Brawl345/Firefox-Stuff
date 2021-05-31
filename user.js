@@ -136,3 +136,4 @@ user_pref("security.secure_connection_icon_color_gray", false); // HTTPS padlock
 user_pref("toolkit.legacyUserProfileCustomizations.stylesheets", true); // Enable userChrome.css
 user_pref("pdfjs.enableScripting", false); // JavaScript in PDFs
 user_pref("browser.menu.showViewImageInfo", true); // Show "view image info" in context menu again
+user_pref("browser.compactmode.show", true); // Show compact mode again
